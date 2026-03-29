@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Coming Soon</title>
+
+        <style>
+            * {
+              margin: 0;
+              padding: 0;
+              box-sizing: border-box;
+              font-family: Arial, sans-serif;
+            }
+
+            body {
+              height: 100vh;
+              background: #0f0f0f;
+              color: #ffffff;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+            }
+
+            .container {
+                padding: 40px;
+                border-radius: 12px;
+                background: rgba(255, 255, 255, 0.05);
+                backdrop-filter: blur(10px);
+                box-shadow: 0 0 20px rgba(0,0,0,0.5);
+            }
+
+            h1 {
+                font-size: clamp(28px, 6vw, 48px);
+                margin-bottom: 10px;
+            }
+
+            h1 span {
+                display: inline-block;
+                animation: blink 1.5s infinite;
+            }
+
+            p {
+                font-size: clamp(12px, 2.5vw, 18px);
+                color: #aaa;
+            }
+
+            @keyframes blink {
+                0%, 100% {
+                    opacity: 0;
+                }
+                50% {
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+
+    <body>
+      <div class="container">
+        <h1>Coming Soon<span>...</span></h1>
+        <p>I'm working on something awesome 🚀</p>
+      </div>
+    </body>
+</html>
